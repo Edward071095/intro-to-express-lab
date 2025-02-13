@@ -4,6 +4,8 @@ const express = require('express')
 // Create an Express app
 const app = express()
 
+//exercise one
+
 app.get('/', (req, res) => {
     res.send("Hello");
  });
@@ -13,10 +15,10 @@ app.get('/greetings/:username', (req, res) => {
 });
 
 
-app.get('/roll/:number', (req, res) => {
-const randomNumber = Math.floor(Math.random() * (req.params.randomNumber + 1))
-res.send(`You rolled a ${randomNumber}</h1>`)
-});
+// app.get('/roll/:number', (req, res) => {
+// const randomNumber = Math.floor(Math.random() * (req.params.randomNumber + 1))
+// res.send(`You rolled a ${randomNumber}</h1>`)
+// });
 
 
 // Listen for requests on port 3000
